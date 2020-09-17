@@ -85,7 +85,6 @@ class TaskTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskListCell", for: indexPath)
         let task: Task
-        
         if let currentTask = currentTaskGroup{
             task = currentTask.subTask[indexPath.row]
         } else {
